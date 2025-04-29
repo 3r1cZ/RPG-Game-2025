@@ -7,6 +7,9 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Label HorizontalAlignment="Center" Content="Settings"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Content="Settings"/>
+            <Button Content="Return" Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
+        </StackPanel>
     </Grid>
 </UserControl>

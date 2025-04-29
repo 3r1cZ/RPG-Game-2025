@@ -4,12 +4,15 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RpgGame2025.Commands;
+using System.Windows.Input;
 
 namespace RpgGame2025.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
 
         protected void OnPropertyChanged(string propertyName)
         {
