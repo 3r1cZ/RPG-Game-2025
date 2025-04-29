@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RpgGame2025
+namespace RpgGame2025.ViewModels
 {
-    class SettingsViewModel : BaseNotificationClass
+    public class SettingsViewModel : BaseViewModel
     {
     }
 }

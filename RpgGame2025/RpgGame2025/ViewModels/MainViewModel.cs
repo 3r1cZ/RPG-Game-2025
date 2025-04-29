@@ -3,32 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
+using RpgGame2025.Commands;
 
-namespace RpgGame2025
+namespace RpgGame2025.ViewModels
 {
-    class MainViewModel : BaseNotificationClass
+    public class MainViewModel : BaseViewModel
     {
-        private object _currentView;
+        private BaseViewModel _currentViewModel;
 
-        public MenuViewModel MenuVm { get; set; }
-        public SettingsViewModel SettingsVm { get; set; }
-
-        public object CurrentView
+        public BaseViewModel CurrentViewModel
         {
-            get => _currentView;
+            get => _currentViewModel;
             set
             {
-                _currentView = value;
-                OnPropertyChanged(nameof(CurrentView));
+                _currentViewModel = value;
+                OnPropertyChanged(nameof(CurrentViewModel));
             }
         }
 
+        public ICommand UpdateViewCommand { get; set; }
+
         public MainViewModel()
         {
-            MenuVm = new MenuViewModel();
-            SettingsVm = new SettingsViewModel();
-
-            CurrentView = SettingsVm;
+            UpdateViewCommand = new UpdateViewCommand(this);
         }
     }
 }

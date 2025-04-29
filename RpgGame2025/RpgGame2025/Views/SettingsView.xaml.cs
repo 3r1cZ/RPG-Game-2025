@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RpgGame2025
+namespace RpgGame2025.Views
 {
     /// <summary>
-    /// Interaction logic for MenuWindow.xaml
+    /// Interaction logic for SettingsView.xaml
     /// </summary>
-    public partial class MenuWindow : Window
+    public partial class SettingsView : UserControl
     {
-        public MenuWindow()
+        public SettingsView()
         {
             InitializeComponent();
         }

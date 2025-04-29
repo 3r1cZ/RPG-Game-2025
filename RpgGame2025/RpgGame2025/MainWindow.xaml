@@ -5,9 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RpgGame2025"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800"
-        d:DataContext="{d:DesignInstance Type=local:MainViewModel}">
+        Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ContentControl Content="{Binding CurrentView}"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <ContentControl Content="{Binding CurrentViewModel}"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Menu" Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
+            <Button Content="Settings" Command="{Binding UpdateViewCommand}" CommandParameter="Settings"/>
+        </StackPanel>
     </Grid>
 </Window>
