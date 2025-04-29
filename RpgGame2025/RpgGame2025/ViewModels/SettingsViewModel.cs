@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RpgGame2025
 {
-    internal class SettingsViewModel
+    class SettingsViewModel : BaseNotificationClass
     {
     }
 }

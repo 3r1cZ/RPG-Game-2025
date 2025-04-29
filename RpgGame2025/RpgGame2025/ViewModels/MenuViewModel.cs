@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RpgGame2025
 {
-    internal class MenuViewModel
+    class MenuViewModel : BaseNotificationClass
     {
     }
 }
