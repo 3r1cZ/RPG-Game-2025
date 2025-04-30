@@ -11,9 +11,9 @@ namespace RpgGame2025.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
+        public ICommand UpdateViewCommand { get; set; }
+
         public event PropertyChangedEventHandler PropertyChanged;
-
-
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

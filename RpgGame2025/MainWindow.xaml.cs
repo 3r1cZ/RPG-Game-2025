@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using RpgGame2025.Commands;
 using RpgGame2025.ViewModels;
 
 namespace RpgGame2025

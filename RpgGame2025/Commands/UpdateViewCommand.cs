@@ -33,7 +33,7 @@ namespace RpgGame2025.Commands
                     return;
 
                 case "Settings":
-                    _viewModel.CurrentViewModel = new SettingsViewModel();
+                    _viewModel.CurrentViewModel = new SettingsViewModel(_viewModel);
                     return;
 
                 default:

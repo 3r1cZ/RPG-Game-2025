@@ -22,7 +22,7 @@ namespace RpgGame2025.ViewModels
             }
         }
 
-        public ICommand UpdateViewCommand { get; set; }
+        //public ICommand UpdateViewCommand { get; set; }
 
         public MainViewModel()
         {
