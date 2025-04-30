@@ -17,6 +17,5 @@ namespace RpgGame2025.ViewModels
             MainViewModel = mainViewModel;
             UpdateViewCommand = new UpdateViewCommand(MainViewModel);
         }
-
     }
 }

@@ -9,7 +9,8 @@
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" Content="Settings"/>
-            <Button Content="Return" Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
+            <Button HorizontalAlignment="Center" Content="Return" 
+                    Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
         </StackPanel>
     </Grid>
 </UserControl>

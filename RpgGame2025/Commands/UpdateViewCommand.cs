@@ -29,7 +29,7 @@ namespace RpgGame2025.Commands
             switch(parameter.ToString())
             {
                 case "Menu":
-                    _viewModel.CurrentViewModel = new MenuViewModel();
+                    _viewModel.CurrentViewModel = new MenuViewModel(_viewModel);
                     return;
 
                 case "Settings":

@@ -7,6 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Label HorizontalAlignment="Center" Content="Menu"/>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" Content="RpgGame2025 Title"/>
+            <Button HorizontalAlignment="Center" Content="Settings"
+                    Command="{Binding UpdateViewCommand}" CommandParameter="Settings"/>
+        </StackPanel>
     </Grid>
 </UserControl>
