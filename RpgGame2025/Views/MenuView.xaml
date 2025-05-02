@@ -9,6 +9,8 @@
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" Content="RpgGame2025 Title"/>
+            <Button HorizontalAlignment="Center" Content="Load Game"
+                    Command="{Binding UpdateViewCommand}" CommandParameter="Saves"/>
             <Button HorizontalAlignment="Center" Content="Settings"
                     Command="{Binding UpdateViewCommand}" CommandParameter="Settings"/>
         </StackPanel>

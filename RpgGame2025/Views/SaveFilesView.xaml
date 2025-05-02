@@ -9,6 +9,8 @@
     <Grid>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Label Content="Save Files"/>
+            <Button HorizontalAlignment="Center" Content="Return" 
+                    Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
         </StackPanel>
     </Grid>
 </UserControl>

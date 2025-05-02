@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RpgGame2025.Commands;
 
 namespace RpgGame2025.ViewModels
 {
@@ -12,7 +11,7 @@ namespace RpgGame2025.ViewModels
         public SettingsViewModel(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
-            UpdateViewCommand = new UpdateViewCommand(MainViewModel);
+            UpdateViewCommand = MainViewModel.UpdateViewCommand;
         }
     }
 }

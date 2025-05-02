@@ -13,6 +13,7 @@ namespace RpgGame2025.ViewModels
         public SaveFilesViewModel(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
+            UpdateViewCommand = MainViewModel.UpdateViewCommand;
 
             Files = new List<string>(6);
         }
