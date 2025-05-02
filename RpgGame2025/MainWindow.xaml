@@ -16,6 +16,7 @@
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
             <Button Content="Menu" Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
+            <Button Content="Saves" Command="{Binding UpdateViewCommand}" CommandParameter="Saves"/>
             <Button Content="Settings" Command="{Binding UpdateViewCommand}" CommandParameter="Settings"/>
         </StackPanel>
     </Grid>

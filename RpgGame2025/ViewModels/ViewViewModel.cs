@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace RpgGame2025.ViewModels
+{
+    public class ViewViewModel : BaseViewModel
+    {
+        public MainViewModel MainViewModel { get; set; }
+    }
+}

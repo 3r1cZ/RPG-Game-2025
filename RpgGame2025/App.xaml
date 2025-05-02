@@ -9,6 +9,9 @@
         <DataTemplate DataType="{x:Type viewmodels:MenuViewModel}">
             <views:MenuView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:SaveFilesViewModel}">
+            <views:SaveFilesView/>
+        </DataTemplate>
         <DataTemplate DataType="{x:Type viewmodels:SettingsViewModel}">
             <views:SettingsView/>
         </DataTemplate>

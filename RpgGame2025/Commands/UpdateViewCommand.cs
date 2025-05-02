@@ -32,6 +32,10 @@ namespace RpgGame2025.Commands
                     _viewModel.CurrentViewModel = new MenuViewModel(_viewModel);
                     return;
 
+                case "Saves":
+                    _viewModel.CurrentViewModel = new SaveFilesViewModel(_viewModel);
+                    return;
+
                 case "Settings":
                     _viewModel.CurrentViewModel = new SettingsViewModel(_viewModel);
                     return;

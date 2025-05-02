@@ -3,16 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RpgGame2025.Commands;
 
 namespace RpgGame2025.ViewModels
 {
-    public class SettingsViewModel : ViewViewModel
+    public class SaveFilesViewModel : ViewViewModel
     {
-        public SettingsViewModel(MainViewModel mainViewModel)
+        public List<string> Files { get; set; }
+
+        public SaveFilesViewModel(MainViewModel mainViewModel)
         {
             MainViewModel = mainViewModel;
-            UpdateViewCommand = new UpdateViewCommand(MainViewModel);
+
+            Files = new List<string>(6);
         }
     }
 }

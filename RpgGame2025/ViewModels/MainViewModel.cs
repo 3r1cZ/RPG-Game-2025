@@ -13,8 +13,8 @@ namespace RpgGame2025.ViewModels
         /// <summary>
         /// Viewmodel properties
         /// </summary>
-        private BaseViewModel _currentViewModel;
-        public BaseViewModel CurrentViewModel
+        private ViewViewModel _currentViewModel;
+        public ViewViewModel CurrentViewModel
         {
             get => _currentViewModel;
             set
