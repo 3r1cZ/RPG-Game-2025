@@ -10,11 +10,11 @@ namespace RpgGame2025
     {
         private static readonly bool _debugOn = true;
 
-        public static void Debug(string message)
+        public static void Debug(string source="", string message = "")
         {
             if (!_debugOn) return;
 
-            System.Diagnostics.Debug.WriteLine($"DEBUG: {message}");
+            System.Diagnostics.Debug.WriteLine($"DEBUG: {source}: {message}");
         }
     }
 }

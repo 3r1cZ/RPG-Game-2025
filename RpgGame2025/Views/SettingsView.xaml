@@ -9,6 +9,25 @@
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <Label HorizontalAlignment="Center" Content="Settings"/>
+
+            <Grid HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left"
+                       Content="Master Volume"/>
+                <Slider Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center"
+                        Width="300" Value="{Binding MainViewModel.MasterVolume}" Orientation="Horizontal"
+                        IsSnapToTickEnabled="True" Maximum="100" TickPlacement="BottomRight"
+                        AutoToolTipPlacement="BottomRight"/>
+            </Grid>
+
             <Button HorizontalAlignment="Center" Content="Return" 
                     Command="{Binding UpdateViewCommand}" CommandParameter="Menu"/>
         </StackPanel>
